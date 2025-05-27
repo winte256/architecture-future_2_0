@@ -17,7 +17,6 @@ workspace {
             description "Экосистема компании Будущее 2.0"
 
 
-
             dwh = container "DWH (Data Warehouse)" {
                 description "Историческое хранилище данных, источник для витрины и сервисов"
             }
@@ -46,7 +45,6 @@ workspace {
                 description "Сервисы для управления клиниками, финансами и т.д."
             }
             
-            // Relationships
             user -> dataMart "Запрашивает отчеты, строит аналитику"
             user -> clientUI "Работает с медицинскими и финансовыми данными"
             dataMart -> dwh "Получает агрегированные данные"
@@ -69,7 +67,7 @@ workspace {
         container futureSystem {
             include *
             autolayout lr
-            title "Будущая архитектура (через год) — Диаграмма контейнеров"
+            title "Будущая архитектура (через год) - Диаграмма контейнеров"
         }
         styles {
             element "Person" {
