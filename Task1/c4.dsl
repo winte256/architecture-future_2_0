@@ -42,7 +42,7 @@ workspace {
                 description "Сервисы для обработки медицинских данных, в том числе неструктурированных (например, изображений из Lakehouse)"
             }
 
-            fintechServices = containder "Финтех-сервисы" {
+            fintechServices = container "Финтех-сервисы" {
                 description "Сервисы для финансовых операций"
             }
 
